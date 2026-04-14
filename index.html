@@ -4,433 +4,535 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Ash McKinnon</title>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="page">
 
-  <!-- NAV -->
-  <nav>
-    <div style="display:flex;align-items:center;gap:10px;">
-      <span class="nav-tag">v1.0</span>
-      <span style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;opacity:0.55;">Melbourne, AU</span>
-    </div>
-    <div class="nav-spinner" id="navSpinner">
-      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <path id="circle-path" d="M 50,50 m -32,0 a 32,32 0 1,1 64,0 a 32,32 0 1,1 -64,0"/>
-        </defs>
-        <text font-family="'IBM Plex Mono', monospace" font-size="11.5" fill="currentColor" letter-spacing="2.5">
-          <textPath href="#circle-path">█ █ █ █ █ █ █ █ █  </textPath>
-        </text>
-        <circle cx="50" cy="50" r="4" fill="var(--red)"/>
-      </svg>
-    </div>
-    <div class="nav-right">ashleymckinn@gmail.com</div>
-  </nav>
-
-  <img class="carabiner" src="./components/caribiner.png" alt="carabiner">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-left">
-      <div class="reg-marks">
-        <div class="reg-circle"></div>
-        <div class="reg-circle"></div>
-        <div class="reg-circle red"></div>
-        <span class="reg-label">YEAR</span>
-      </div>
-      <div style="margin-bottom:12px;">
-        <span class="name-lg">ASHLEY</span>
-        <span class="name-lg accent">McKINNON<span class="cursor"></span></span>
-      </div>
-      <div class="hero-tags">
-        <span class="chip inv">Azure</span>
-        <span class="chip inv">Cloud Platform</span>
-        <span class="chip red">CI/CD</span>
-        <span class="chip">IaC</span>
-        <span class="chip">DevOps</span>
-        <span class="chip">Bicep</span>
-        <span class="chip">PowerShell</span>
-        <span class="chip purple">Entra ID</span>
-      </div>
-      <div class="hero-sub" style="opacity:0.8;font-size:10px;font-weight:500;">Azure Cloud Engineer · Australian Bureau of Statistics · Brunswick VIC</div>
-      <div class="status-bar">
-        <span class="live">Available for grad opportunities</span>
-        <span>Ba Information Technology · RMIT <br> Finish NOV. 2026</span>
+  <!-- WINDOW: CONTACT -->
+  <div class="window">
+    <div class="window-titlebar" style="background:#1a6db5;">
+      <span class="window-num">·</span>
+      <span class="window-title">CONTACT</span>
+      <div class="window-controls">
+        <span class="win-btn"></span><span class="win-btn"></span><span class="win-btn"></span>
       </div>
     </div>
-    <div class="hero-right">
-      <div class="serial">
-        STUDENT-3886682<br>
-        AU · ACTIVE<br>
-        2022-2026
-      </div>
-      <div>
-        <div class="barcode" style="margin-top:10px;">
-          <div class="bc-bar" style="width:2px"></div><div class="bc-bar" style="width:1px"></div><div class="bc-bar" style="width:3px"></div><div class="bc-bar" style="width:1px"></div><div class="bc-bar" style="width:2px"></div><div class="bc-bar" style="width:1px"></div><div class="bc-bar" style="width:4px"></div><div class="bc-bar" style="width:1px"></div><div class="bc-bar" style="width:2px"></div><div class="bc-bar" style="width:2px"></div><div class="bc-bar" style="width:1px"></div><div class="bc-bar" style="width:3px"></div><div class="bc-bar" style="width:1px"></div><div class="bc-bar" style="width:2px"></div><div class="bc-bar" style="width:1px"></div><div class="bc-bar" style="width:2px"></div><div class="bc-bar" style="width:3px"></div><div class="bc-bar" style="width:1px"></div><div class="bc-bar" style="width:2px"></div><div class="bc-bar" style="width:1px"></div>
+    <div class="window-body">
+      <div class="contact-bar">
+        <div class="contact-item">
+          <span class="contact-key">ashleymckinn@gmail.com</span>
+          <a class="btn" href="mailto:ashleymckinn@gmail.com">Email →</a>
         </div>
-        <div class="barcode-num">01000001 01010011 01001000</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT BAR -->
-  <div class="contact-bar">
-    <div class="contact-item">
-      <span class="contact-key">Email</span>
-      <span class="contact-val"><a href="mailto:ashleymckinn@gmail.com">ashleymckinn@gmail.com</a></span>
-    </div>
-    <div class="contact-item" style="align-items:center;">
-      <img src="./components/developers-qr.png" alt="QR code" style="width:64px;height:64px;image-rendering:pixelated;mix-blend-mode:multiply;">
-    </div>
-    <div class="contact-item" style="align-items:flex-end;">
-      <span class="contact-key">LinkedIn</span>
-      <span class="contact-val"><a href="https://www.linkedin.com/in/ashley-mckinn/" target="_blank">linkedin.com/in/ashley-mckinn</a></span>
-    </div>
-  </div>
-
-  <!-- 001 WHO + 002 STACK -->
-  <div class="sec-label"><span>001 · WHO</span><span>Brunswick, VIC</span></div>
-  <div class="body-grid">
-    <div class="lbl-section">
-      <div class="lbl-sec-header"><span>SUMMARY</span><span class="sec-code">OVERVIEW</span></div>
-      <div class="entry">
-        <span class="entry-key">Role</span>
-        <span class="entry-val">Azure Cloud Engineer @ Aus. Bureau Of Statistics</span>
-      </div>
-      <div class="entry">
-        <span class="entry-key">Academia</span>
-        <span class="entry-val sm">Ba. IT · RMIT · GPA 4.0 · Dean's List · Top 3%</span>
-      </div>
-      <div class="entry">
-        <span class="entry-key">Capstone</span>
-        <span class="entry-val sm">FrogFinder - on-device ML frog species classifier · Project Lead</span>
-      </div>
-      <div class="entry">
-        <span class="entry-key">Key Work</span>
-        <span class="entry-val sm">Fn App pipeline 35 → 3 min · ELZ overhaul · RBAC pipeline · Entra identity</span>
-      </div>
-      <div class="entry">
-        <span class="entry-key">Background</span>
-        <span class="entry-val sm">Baker → Bakery Manager (8 yrs) · Career change into cloud engineering</span>
-      </div>
-      <div class="entry">
-        <span class="entry-key">Outside</span>
-        <span class="entry-val sm">Snow sports · Lead Climbing</span>
-      </div>
-    </div>
-    <div class="lbl-section">
-      <div class="lbl-sec-header"><span>STACK</span><span class="sec-code">PRODUCTION</span></div>
-      <div class="entry" style="margin-bottom:10px;">
-        <span class="entry-key">IaC</span>
-        <div style="display:flex;flex-wrap:wrap;gap:3px;margin-top:3px;">
-          <span class="mini-badge inv">Bicep</span>
-          <span class="mini-badge inv">ARM Templates</span>
-          <span class="mini-badge">Terraform</span>
+        <div class="contact-item">
+          <span class="contact-key">linkedin.com/in/ashley-mckinn</span>
+          <a class="btn" href="https://www.linkedin.com/in/ashley-mckinn/" target="_blank">LinkedIn →</a>
         </div>
-      </div>
-      <div class="entry" style="margin-bottom:10px;">
-        <span class="entry-key">Scripting &amp; Pipelines</span>
-        <div style="display:flex;flex-wrap:wrap;gap:3px;margin-top:3px;">
-          <span class="mini-badge inv">PowerShell</span>
-          <span class="mini-badge inv">Azure DevOps</span>
-          <span class="mini-badge">Python</span>
-          <span class="mini-badge">Bash</span>
-        </div>
-      </div>
-      <div class="entry" style="margin-bottom:10px;">
-        <span class="entry-key">Identity &amp; Governance</span>
-        <div style="display:flex;flex-wrap:wrap;gap:3px;margin-top:3px;">
-          <span class="mini-badge inv">Entra ID</span>
-          <span class="mini-badge inv">RBAC</span>
-          <span class="mini-badge">PIM</span>
-          <span class="mini-badge">CAPs</span>
-          <span class="mini-badge">Active Directory</span>
-        </div>
-      </div>
-      <div class="entry" style="margin-bottom:10px;">
-        <span class="entry-key">Cloud Platform</span>
-        <div style="display:flex;flex-wrap:wrap;gap:3px;margin-top:3px;">
-          <span class="mini-badge inv">Azure</span>
-          <span class="mini-badge">Function Apps</span>
-          <span class="mini-badge">Storage</span>
-          <span class="mini-badge">Networking</span>
-        </div>
-      </div>
-      <div class="entry-divider">
-        <span class="entry-key">Key Metric</span>
-        <span class="entry-val sm">Fn App pipeline: <strong>35 min → 3 min</strong> (~92% faster)</span>
       </div>
     </div>
   </div>
 
-  <!-- PROJECT -->
-  <div class="sec-label"><span>002 · Project</span><span>FrogFinder · Capstone · RMIT</span></div>
-  <div class="project-block">
-    <div class="project-inner">
-      <div class="proj-left">
-        <div>
-          <div class="proj-title">FROG<br><span class="sub">FINDER</span><br><span class="dim">MFCC</span></div>
-          <p class="proj-desc">
-            Platform-agnostic application for automated classification of Australian frog species from environmental audio recordings. <strong>Inference runs on-device</strong> - no server dependency - built to assist researchers track frog populations over time.<br><br>
-            Classifying frog calls currently requires a domain expert to review every recording. FrogFinder eliminates that bottleneck. MFCC feature extraction maps audio signals into a 2D coefficient heatmap, feeding a lightweight on-device ML model.
-          </p>
-          <div class="proj-spec">
-            <div class="entry">
-              <span class="entry-key">Role</span>
-              <span class="entry-val sm">Tech Lead · Scrum Master</span>
-            </div>
-            <div class="entry">
-              <span class="entry-key">Accuracy</span>
-              <span class="entry-val sm red">95.2%</span>
+  <!-- WINDOW: PROFILE -->
+  <div class="window">
+    <div class="window-titlebar" style="background:#c23030;">
+      <span class="window-num">001</span>
+      <span class="window-title">PROFILE</span>
+      <div class="window-controls">
+        <span class="win-btn"></span><span class="win-btn"></span><span class="win-btn"></span>
+      </div>
+    </div>
+    <div class="window-body">
+      <section class="hero">
+        <div class="hero-left">
+          <div class="name-wrap">
+            <span class="name-lg">ASHLEY</span>
+            <span class="name-lg accent">McKINNON<span class="cursor"></span></span>
+          </div>
+          <blockquote class="hero-bio academia-quote">Eight years in commercial kitchens taught me systems thinking under pressure. I brought that into cloud engineering and haven't looked back. Now I build the infrastructure and identity pipelines that keep federal platforms running.</blockquote>
+          <div class="hero-tags">
+            <span class="chip inv">Azure</span>
+            <span class="chip inv">Entra ID</span>
+            <span class="chip red">PowerShell</span>
+            <span class="chip">IaC</span>
+            <span class="chip">CI/CD</span>
+            <span class="chip">DevOps</span>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div>
+            <div class="profile-card-label">Current Role</div>
+            <div class="profile-card-role">Azure Cloud Engineer</div>
+            <div class="profile-card-sub">ABS · Melbourne</div>
+          </div>
+          <div>
+            <div class="profile-card-label">Academia</div>
+            <div class="profile-card-role" style="font-size:13px;">Ba. IT · RMIT · Final Year</div>
+          </div>
+          <div class="profile-stat-row">
+            <div>
+              <div class="profile-stat-num">4.0</div>
+              <div class="profile-stat-lbl">GPA</div>
             </div>
           </div>
-        </div>
-        <a class="proj-link" href="https://github.com/S3886682/project-pobblebonk" target="_blank">→ View on GitHub</a>
-      </div>
-      <div class="proj-right">
-        <div class="lbl-sec-header" style="margin-bottom:10px;"><span>STACK</span><span class="sec-code">ON-DEVICE</span></div>
-        <div>
-          <span class="mini-badge green">Expo Router</span>
-          <span class="mini-badge green">NativeWind</span>
-          <span class="mini-badge green">Meyda</span>
-          <span class="mini-badge">Expo AV</span>
-          <span class="mini-badge blue">Supabase</span>
-          <span class="mini-badge blue">PostgreSQL</span>
-          <span class="mini-badge">Python/Sklearn</span>
-          <span class="mini-badge">React Native</span>
-          <span class="mini-badge">PyTorch</span>
-          <span class="mini-badge">Librosa</span>
-        </div>
-        <div class="heatmap-wrap">
-          <div class="heatmap-label-sm">Pobblebonk · 13 coefficients × 60 frames</div>
-          <canvas id="heatmapCanvas" width="320" height="160" style="width:100%;display:block;"></canvas>
-          <div class="heatmap-axes">
-            <span>0ms</span><span>← Time →</span><span>~2000ms</span>
-          </div>
-          <div class="colorbar">
-            <div class="colorbar-cell" style="background:#0a0a1a;"></div>
-            <div class="colorbar-cell" style="background:#0f1f4a;"></div>
-            <div class="colorbar-cell" style="background:#0c3a80;"></div>
-            <div class="colorbar-cell" style="background:#0060b8;"></div>
-            <div class="colorbar-cell" style="background:#0090d0;"></div>
-            <div class="colorbar-cell" style="background:#00b8e0;"></div>
-            <div class="colorbar-cell" style="background:#20d4c0;"></div>
-            <div class="colorbar-cell" style="background:#80e860;"></div>
-            <div class="colorbar-cell" style="background:#d0d020;"></div>
-            <div class="colorbar-cell" style="background:#f08000;"></div>
-            <div class="colorbar-cell" style="background:#e83000;"></div>
-            <div class="colorbar-cell" style="background:#ff2200;"></div>
+          <div class="profile-open-pill">
+            <span class="open-dot"></span>
+            Finishing Nov. 2026
           </div>
         </div>
-        <div style="margin-top:10px;">
-          <span class="entry-key" style="display:block;margin-bottom:3px;">Status</span>
+      </section>
+    </div>
+  </div>
+
+  <!-- WINDOW: STACK -->
+  <div class="window">
+    <div class="window-titlebar" style="background:#6e38b0;">
+      <span class="window-num">002</span>
+      <span class="window-title">STACK</span>
+      <div class="window-controls">
+        <span class="win-btn"></span><span class="win-btn"></span><span class="win-btn"></span>
+      </div>
+    </div>
+    <div class="window-body">
+      <div class="stack-grid">
+        <!-- Cloud Platform: large dark card, spans 2 rows -->
+        <div class="stack-card dark span-rows">
+          <div class="stack-card-eyebrow">Cloud Platform</div>
+          <div class="stack-card-title">AZURE<br>CLOUD</div>
+          <blockquote class="academia-quote" style="border-left-color:rgba(255,255,255,0.25);color:rgba(255,255,255,0.7);font-size:10px;">Core platform. Deploy and manage Azure infrastructure across a federal multi-tenant environment: Function Apps, Storage, Networking, and cloud-native services.</blockquote>
+          <div class="stack-card-badges">
+            <span class="mini-badge">Function Apps</span>
+            <span class="mini-badge">Storage</span>
+            <span class="mini-badge">Networking</span>
+            <span class="mini-badge">Azure Portal</span>
+            <span class="mini-badge">Subscriptions</span>
+            <span class="mini-badge">Resource Groups</span>
+          </div>
+        </div>
+        <!-- Identity & Governance: blue -->
+        <div class="stack-card blue-card">
+          <div class="stack-card-eyebrow">Identity &amp; Governance</div>
+          <div class="stack-card-title">ENTRA<br>ID</div>
+          <div class="stack-card-badges">
+            <span class="mini-badge">Entra ID</span>
+            <span class="mini-badge">PIM / JIT</span>
+            <span class="mini-badge">RBAC</span>
+            <span class="mini-badge">CAPs</span>
+            <span class="mini-badge">App Registrations</span>
+          </div>
+        </div>
+        <!-- CI/CD & Automation: light -->
+        <div class="stack-card">
+          <div class="stack-card-eyebrow">CI/CD &amp; Automation</div>
+          <div class="stack-card-title">AZURE<br>DEVOPS</div>
+          <div class="stack-card-badges">
+            <span class="mini-badge">Azure DevOps</span>
+            <span class="mini-badge">Pipelines</span>
+            <span class="mini-badge">ServiceNow</span>
+            <span class="mini-badge">Jira</span>
+          </div>
+        </div>
+        <!-- Infrastructure as Code: plain -->
+        <div class="stack-card">
+          <div class="stack-card-eyebrow">Infrastructure as Code</div>
+          <div class="stack-card-title">BICEP<br>/ ARM</div>
+          <div class="stack-card-badges">
+            <span class="mini-badge">Bicep</span>
+            <span class="mini-badge">ARM</span>
+            <span class="mini-badge">Terraform</span>
+          </div>
+        </div>
+        <!-- Scripting & Pipelines: plain -->
+        <div class="stack-card">
+          <div class="stack-card-eyebrow">Scripting &amp; Pipelines</div>
+          <div class="stack-card-title">POWER<br>SHELL</div>
+          <div class="stack-card-badges">
+            <span class="mini-badge">PowerShell</span>
+            <span class="mini-badge">Python</span>
+            <span class="mini-badge">Bash</span>
+            <span class="mini-badge">Graph API</span>
+          </div>
+        </div>
+      </div>
+      <div class="stack-tooling">
+        <span class="stack-tooling-label">Tooling</span>
+        <span class="mini-badge">ServiceNow</span>
+        <span class="mini-badge">Jira</span>
+        <span class="mini-badge">ADO Wiki</span>
+        <span class="mini-badge">Git</span>
+        <span class="mini-badge">VS Code</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- WINDOW: PROJECT · FROGFINDER -->
+  <div class="window">
+    <div class="window-titlebar" style="background:#28904e;">
+      <span class="window-num">003</span>
+      <span class="window-title">PROJECT · FROGFINDER</span>
+      <div class="window-controls">
+        <span class="win-btn"></span><span class="win-btn"></span><span class="win-btn"></span>
+      </div>
+    </div>
+    <div class="window-body">
+      <div class="project-inner">
+        <div class="proj-left">
+          <div>
+            <div class="proj-title">FROG<br><span class="sub">FINDER</span><br><span class="dim">MFCC</span></div>
+            <blockquote class="academia-quote proj-desc" style="border-left-color:var(--green);">
+              Platform-agnostic application for automated classification of Australian frog species from audio recordings. <strong>Inference runs on-device</strong>, built to assist researchers track frog populations.<br><br>
+              Classifying frog calls currently requires a domain expert to review every recording. FrogFinder eliminates that bottleneck. MFCC feature extraction maps audio signals into a 2D coefficient heatmap, feeding a lightweight on-device ML model.
+            </blockquote>
+            <div class="proj-spec">
+              <div class="entry">
+                <span class="entry-key">Role</span>
+                <span class="entry-val sm">Tech Lead · Scrum Master</span>
+              </div>
+              <div class="entry">
+                <span class="entry-key">Accuracy</span>
+                <span class="entry-val sm red">95.2%</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <a class="btn" href="https://github.com/S3886682/project-pobblebonk" target="_blank">→ View on GitHub</a>
+          </div>
+        </div>
+        <div class="proj-right">
+          <div class="lbl-sec-header" style="margin-bottom:10px;"><span>STACK</span><span class="sec-code">ON-DEVICE</span></div>
+          <div class="badge-group">
+            <span class="mini-badge green">Expo</span>
+            <span class="mini-badge green">NativeWind</span>
+            <span class="mini-badge green">Meyda</span>
+            <span class="mini-badge blue">Supabase</span>
+            <span class="mini-badge blue">PostgreSQL</span>
+            <span class="mini-badge">Python/Sklearn</span>
+            <span class="mini-badge">React Native</span>
+            <span class="mini-badge">PyTorch</span>
+            <span class="mini-badge">Librosa</span>
+          </div>
+          <div class="heatmap-wrap">
+            <div class="heatmap-titlebar">
+              <span class="heatmap-title">MFCC · POBBLEBONK</span>
+              <span class="heatmap-spec">13 COEFF × 60 FRAMES</span>
+            </div>
+            <div class="heatmap-inner">
+              <canvas id="heatmapCanvas" width="320" height="160" style="width:100%;display:block;"></canvas>
+              <div class="heatmap-axes">
+                <span>0ms</span><span>← Time →</span><span>~2000ms</span>
+              </div>
+              <div class="colorbar-wrap">
+                <span class="colorbar-label">Low</span>
+                <div class="colorbar">
+                  <div class="colorbar-cell" style="background:#0a0a1a;"></div>
+                  <div class="colorbar-cell" style="background:#0f1f4a;"></div>
+                  <div class="colorbar-cell" style="background:#0c3a80;"></div>
+                  <div class="colorbar-cell" style="background:#0060b8;"></div>
+                  <div class="colorbar-cell" style="background:#0090d0;"></div>
+                  <div class="colorbar-cell" style="background:#00b8e0;"></div>
+                  <div class="colorbar-cell" style="background:#20d4c0;"></div>
+                  <div class="colorbar-cell" style="background:#80e860;"></div>
+                  <div class="colorbar-cell" style="background:#d0d020;"></div>
+                  <div class="colorbar-cell" style="background:#f08000;"></div>
+                  <div class="colorbar-cell" style="background:#e83000;"></div>
+                  <div class="colorbar-cell" style="background:#ff2200;"></div>
+                </div>
+                <span class="colorbar-label">High</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ACADEMIA -->
-  <div class="sec-label"><span>003 · Academia</span><span>RMIT · Ba Information Technology</span></div>
-  <div class="grad-block">
-    <div class="grad-inner">
-      <div class="gpa-block">
-        <span class="entry-key" style="margin-bottom:4px;opacity:0.8;font-size:8px;letter-spacing:0.2em;">GPA</span>
-        <div class="gpa-num">4.0<span style="font-size:28px;opacity:0.4;">/4.0</span></div>
-        <div class="gpa-sub">Ba. Information Technology · RMIT University · Final Year </div>
-        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:4px;">
-          <span class="chip inv" style="font-size:7px;">Cloud Architecture</span>
-          <span class="chip red" style="font-size:7px;">Open to grad roles</span>
-          <span class="chip" style="font-size:7px;">DevOps</span>
-          <span class="chip" style="font-size:7px;">Platform Eng</span>
+  <!-- WINDOW: ACADEMIA -->
+  <div class="window">
+    <div class="window-titlebar" style="background:#b83030;">
+      <span class="window-num">004</span>
+      <span class="window-title">ACADEMIA · RMIT</span>
+      <div class="window-controls">
+        <span class="win-btn"></span><span class="win-btn"></span><span class="win-btn"></span>
+      </div>
+    </div>
+    <div class="window-body">
+      <div class="academia-grid">
+        <!-- RMIT: dark card, spans 2 rows -->
+        <div class="stack-card dark span-rows">
+          <div class="stack-card-eyebrow">RMIT University</div>
+          <div class="academia-uni" style="font-size:38px;">BAch.<br><span class="accent">INFOrmation<br>TECHnology</span></div>
+          <div class="academia-sub" style="color:rgba(255,255,255,0.45);margin-top:0;">Final Year · Melbourne, VIC</div>
+          <blockquote class="academia-quote" style="border-left-color:rgba(255,255,255,0.25);color:rgba(255,255,255,0.65);font-size:10px;">Electives in Cloud Computing, Cloud Security, and Algorithms &amp; Analysis. Capstone project lead on bioacoustic frog species classification using on-device ML.</blockquote>
+          <div class="stack-card-badges">
+            <span class="mini-badge">Ba. Information Technology</span>
+            <span class="mini-badge">2022 – 2026</span>
+          </div>
+        </div>
+        <!-- GPA card -->
+        <div class="stack-card">
+          <div class="stack-card-eyebrow">Academic Performance</div>
+          <div class="gpa-num" style="font-size:54px;">4.0<span class="gpa-denom" style="font-size:22px;">/4.0 </span></div>
+          <div class="gpa-honors">Dean's List · Top 3%</div>
+        </div>
+        <!-- Awards card -->
+        <div class="stack-card">
+          <div class="stack-card-eyebrow">Awards &amp; Recognition</div>
+          <div class="grad-awards">
+            <div class="award-row">
+              STEM School Dean's List 2025
+              <span class="award-tag" style="border-color:var(--blue);color:var(--blue);">Top 3%</span>
+            </div>
+            <div class="award-row">
+              RMIT Student Award – Finalist
+              <span class="award-tag">2025</span>
+            </div>
+            <div class="award-row">
+              Student Representative
+              <span class="award-tag">2025</span>
+            </div>
+            <div class="award-row">
+              Capstone · Project Lead
+              <span class="award-tag">Bioacoustics</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="grad-right">
-        <span class="entry-key" style="display:block;margin-bottom:8px;">Awards &amp; Recognition</span>
-        <div class="award-row">
-          STEM School Dean's List 2025
-          <span class="award-tag" style="border-color:var(--blue);color:var(--blue);">Top 3%</span>
-        </div>
-        <div class="award-row">
-          RMIT Student Award - Finalist
-          <span class="award-tag">2025</span>
-        </div>
-        <div class="award-row">
-          Student Representative
-          <span class="award-tag">2025</span>
-        </div>
-        <div class="award-row">
-          Project Lead · Bioacoustic Classification of Frog Species
-          <span class="award-tag">Capstone</span>
+      <div class="coursework-block">
+        <div class="coursework-eyebrow">Coursework</div>
+        <div class="coursework-grid">
+          <div class="pipeline-card cc-blue">
+            <span class="course-name">Cloud Computing</span>
+            <span class="course-sub">AWS · EC2 · Networking · IaC · CloudFormation</span>
+          </div>
+          <div class="pipeline-card cc-red">
+            <span class="course-name">Cloud Security</span>
+            <span class="course-sub">Adv. Cryptography · ACLs · Security Groups</span>
+          </div>
+          <div class="pipeline-card cc-purple">
+            <span class="course-name">Software Development</span>
+            <span class="course-sub">Java · Python · OOP · Algorithms · Data Structures</span>
+          </div>
+          <div class="pipeline-card cc-blue">
+            <span class="course-name">Networking</span>
+            <span class="course-sub">Cisco · Packet Tracer · Virtualisation</span>
+          </div>
+          <div class="pipeline-card cc-red">
+            <span class="course-name">Cybersecurity &amp; SysAdmin</span>
+            <span class="course-sub">Unix · Bash Scripting · Active Directory</span>
+          </div>
+          <div class="pipeline-card cc-purple">
+            <span class="course-name">Web Dev &amp; Databases</span>
+            <span class="course-sub">SQL · HTML · CSS · JS</span>
+          </div>
+          <div class="pipeline-card cc-purple">
+            <span class="course-name">Software Engineering</span>
+            <span class="course-sub">Scrum · Agile · UML · Architecture</span>
+          </div>
+          <div class="pipeline-card cc-purple">
+            <span class="course-name">UX Design</span>
+            <span class="course-sub">Figma · Use Case Diagrams · Accessibility</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="coursework-block">
-      <div class="coursework-eyebrow">Coursework</div>
-      <div class="coursework-grid">
-        <div class="course-item">
-          <span class="course-name">Cloud Computing</span>
-          <span class="course-sub">AWS · EC2 · Networking · IaC · CloudFormation</span>
+  </div>
+
+  <!-- WINDOW: WORK -->
+  <div class="window">
+    <div class="window-titlebar" style="background:#1868b4;">
+      <span class="window-num">005</span>
+      <span class="window-title">WORK · ABS</span>
+      <div class="window-controls">
+        <span class="win-btn"></span><span class="win-btn"></span><span class="win-btn"></span>
+      </div>
+    </div>
+    <div class="window-body">
+      <div class="work-hero">
+        <div class="academia-uni" style="color:var(--ink);">Azure<br><span style="color:var(--blue);">CLOUD<br>ENGINEER</span></div>
+        <div class="academia-sub">Australian Bureau of Statistics · Nov 2024 – Present · Melbourne, VIC</div>
+        <blockquote class="academia-quote" style="border-left-color:var(--blue);">Build and maintain production CI/CD pipelines across Azure and Entra ID in a high-governance federal environment. Multiple pipelines delivered end-to-end: from architecture and requirements through to production deployment.</blockquote>
+      </div>
+
+
+
+      <div class="pipelines-grid">
+        <div class="pipeline-card">
+          <div class="pc-tag blue">Infrastructure · Performance</div>
+          <div class="pc-title">Function App<br>Pipeline</div>
+          <div class="pc-desc">Complete refactor of the Function App deployment pipeline. Took runtime from ~35 minutes to under 3 minutes through architectural redesign in a production, high-governance federal environment.</div>
+          <div><span class="pc-badge inv">~92% faster</span></div>
+          <div class="pc-num">01</div>
         </div>
-        <div class="course-item">
-          <span class="course-name">Cloud Security</span>
-          <span class="course-sub">Adv. Cryptography · ACLs · Security Groups</span>
+        <div class="pipeline-card">
+          <div class="pc-tag blue">Infrastructure · Tech-debt</div>
+          <div class="pc-title">Enterprise Landing Zone<br>Pipeline</div>
+          <div class="pc-desc">Major overhaul of the Bicep-based Enterprise Landing Zone pipeline. Reduced accumulated tech-debt, improved end-user experience and maintainability across multi-tenant cloud environments.</div>
+          <div><span class="pc-badge inv-purple">Bicep · IaC</span></div>
+          <div class="pc-num">02</div>
         </div>
-        <div class="course-item">
-          <span class="course-name">Software Development</span>
-          <span class="course-sub">Java · Python · OOP · Algorithms · Data Structures</span>
+        <div class="pipeline-card">
+          <div class="pc-tag purple">Identity · State-managed</div>
+          <div class="pc-title">Azure RBAC<br>Pipeline</div>
+          <div class="pc-desc">Research → design → architecture → deployment → integration testing → CI validation. State-managed, data-driven RBAC pipeline. Rollback on failure, full accountability and visibility across environments.</div>
+          <div><span class="pc-badge red">Production deployed</span></div>
+          <div class="pc-num">03</div>
         </div>
-        <div class="course-item">
-          <span class="course-name">Networking</span>
-          <span class="course-sub">Cisco · Packet Tracer · Virtualisation</span>
+        <div class="pipeline-card">
+          <div class="pc-tag purple">Identity · Zero Trust</div>
+          <div class="pc-title">Conditional Access<br>Policy Pipeline</div>
+          <div class="pc-desc">Design, deployment and management of Conditional Access Policies as pipeline-managed infrastructure. Versioned policy lifecycle with rollback capability: enforcing a consistent zero-trust posture across a federal multi-environment platform.</div>
+          <div>
+            <span class="pc-badge def">CAPs</span>
+            <span class="pc-badge def">Zero Trust</span>
+            <span class="pc-badge def">Entra ID</span>
+          </div>
+          <div class="pc-num">04</div>
         </div>
-        <div class="course-item">
-          <span class="course-name">Cybersecurity &amp; SysAdmin</span>
-          <span class="course-sub">Unix · Bash Scripting · Active Directory</span>
+        <div class="pipeline-card">
+          <div class="pc-tag purple">Identity · Just-In-Time</div>
+          <div class="pc-title">PIM / JIT<br>Access Pipeline</div>
+          <div class="pc-desc">Pipeline-managed Privileged Identity Management with Just-In-Time access controls. Enforces least-privilege, time-bound role assignments and approval workflows across all privileged roles in a federal environment.</div>
+          <div>
+            <span class="pc-badge def">PIM</span>
+            <span class="pc-badge def">JIT</span>
+            <span class="pc-badge def">Entra ID</span>
+          </div>
+          <div class="pc-num">05</div>
         </div>
-        <div class="course-item">
-          <span class="course-name">Web Dev &amp; Databases</span>
-          <span class="course-sub">SQL · HTML · CSS · JS</span>
+        <div class="pipeline-card">
+          <div class="pc-tag purple">Identity · Governance</div>
+          <div class="pc-title">Entra Roles<br>Pipeline</div>
+          <div class="pc-desc">Automated, state-managed pipeline for Entra ID role lifecycle management: provisioning, de-provisioning and auditing of directory roles and assignments across multi-environment platforms.</div>
+          <div>
+            <span class="pc-badge def">Entra ID</span>
+            <span class="pc-badge def">RBAC</span>
+            <span class="pc-badge def">Governance</span>
+          </div>
+          <div class="pc-num">06</div>
         </div>
-        <div class="course-item">
-          <span class="course-name">Software Engineering</span>
-          <span class="course-sub">Scrum · Agile · UML · Architecture</span>
+      </div>
+
+
+<div class="prev-exp-block">
+        <div class="coursework-eyebrow"><span>PREVIOUS EXPERIENCE</span><span>CAREER</span></div>
+        <div class="prev-exp-row">
+          <span class="prev-exp-role">Ski Tech</span>
+          <span class="prev-exp-org">Rocky Valley · Tawonga, VIC</span>
+          <span class="prev-exp-date">Jun – Sep 2024</span>
         </div>
-        <div class="course-item">
-          <span class="course-name">UX Design</span>
-          <span class="course-sub">Figma · Use Case Diagrams · Accessibility</span>
+        <div class="prev-exp-row">
+          <span class="prev-exp-role">Senior Baker</span>
+          <span class="prev-exp-org">Bakers Delight · Wheeler's Hill, VIC</span>
+          <span class="prev-exp-date">Oct 2020 – Jun 2024</span>
+        </div>
+        <div class="prev-exp-row">
+          <span class="prev-exp-role">Bakery Manager</span>
+          <span class="prev-exp-org">Mid Perisher Centre · Perisher, NSW</span>
+          <span class="prev-exp-date">2020 &amp; 2022 Seasons</span>
+        </div>
+        <div class="prev-exp-row">
+          <span class="prev-exp-role">Baker</span>
+          <span class="prev-exp-org">Bakers Delight · Frankston/Langwarrin, VIC</span>
+          <span class="prev-exp-date">May 2017 – Jun 2020</span>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- WORK -->
-  <div class="sec-label"><span>004 · Work</span><span>ABS · Platform Engineering</span></div>
-  <div class="work-block">
-    <div class="work-hero">
-      <div class="abs-logo">ABS</div>
-      <div class="work-title-block">
-        <div class="work-org">Australian Bureau of Statistics</div>
-        <div class="work-role">AZURE CLOUD<br><span class="accent">ENGINEER</span></div>
-        <div class="work-focus">Platform Engineering · Identity Management (Entra) · Bicep · PowerShell</div>
+  <!-- WINDOW: OUTSIDE WORK -->
+  <div class="window">
+    <div class="window-titlebar" style="background:#3a8040;">
+      <span class="window-num">006</span>
+      <span class="window-title">OUTSIDE WORK</span>
+      <div class="window-controls">
+        <span class="win-btn"></span><span class="win-btn"></span><span class="win-btn"></span>
       </div>
     </div>
+    <div class="window-body">
+      <div class="outside-grid">
+        <!-- Climbing: dark, spans 2 rows -->
+        <div class="stack-card dark span-rows">
+          <div class="stack-card-eyebrow">Climbing</div>
+          <div class="stack-card-title">LEAD<br><span style="color:var(--red)">CLIMBING</span></div>
+          <div>
+            <div class="bento-label">Indoor</div>
+            <div class="bento-val">Urban Climb</div>
+            <span class="mini-badge" style="background:var(--red);border-color:var(--red);color:#fff;">Grade 23</span>
+          </div>
+          <div>
+            <div class="bento-label">Outdoor</div>
+            <div class="bento-val">Boogie Till You Puke<br>Camel's Hump</div>
+            <span class="mini-badge" style="background:var(--red);border-color:var(--red);color:#fff;">Grade 21</span>
+          </div>
+          <div>
+            <div class="bento-label">Certs</div>
+            <div class="bento-val">Top Rope Anchor<br>Outdoor Lead Course<br>First Aid & CPR</div>
+          </div>
+          <div class="stack-card-badges">
 
-    <div class="stat-strip">
-      <div class="stat-cell">
-        <div class="stat-num"><span class="accent"><s>35</s></span><span class="unit">min → </span><span class="accent">&lt;3</span><span class="unit">min</span></div>
-        <div class="stat-desc"><br>Function App <br> pipeline refactor</div>
-      </div>
-      <div class="stat-cell">
-        <div class="stat-num" style="color:var(--purple)">ELZ</div>
-        <div class="stat-desc">Enterprise Landing Zone<br>Bicep pipeline overhaul</div>
-      </div>
-      <div class="stat-cell">
-        <div class="stat-num blue">RBAC</div>
-        <div class="stat-desc">State-managed data-driven<br>permissions pipeline - built from scratch</div>
-      </div>
-    </div>
-
-    <div class="pipelines-grid">
-      <div class="pipeline-card">
-        <div class="pc-tag">Pipeline refactor · Performance</div>
-        <div class="pc-title"><span class="accent">Function App</span><br>Pipeline</div>
-        <div class="pc-desc">Complete refactor of the Function App deployment pipeline. Took runtime from ~35 minutes to under 3 minutes through architectural redesign in a production, high-governance federal environment.</div>
-        <div><span class="pc-badge inv">~92% faster</span></div>
-        <div class="pc-num">01</div>
-      </div>
-      <div class="pipeline-card">
-        <div class="pc-tag">Pipeline overhaul · Tech-debt</div>
-        <div class="pc-title"><span class="purple">Enterprise Landing Zone</span><br>Pipeline</div>
-        <div class="pc-desc">Major overhaul of the Bicep-based Enterprise Landing Zone pipeline. Reduced accumulated tech-debt, improved end-user experience and maintainability across multi-tenant cloud environments.</div>
-        <div><span class="pc-badge inv-purple">Bicep · IaC</span></div>
-        <div class="pc-num">02</div>
-      </div>
-      <div class="pipeline-card">
-        <div class="pc-tag">Built from scratch · State-managed</div>
-        <div class="pc-title"><span class="blue">Azure RBAC</span><br>Pipeline</div>
-        <div class="pc-desc">Research → design → architecture → deployment → integration testing → CI validation. State-managed, data-driven RBAC pipeline. Rollback on failure, full accountability and visibility across environments.</div>
-        <div><span class="pc-badge red">Production deployed</span></div>
-        <div class="pc-num">03</div>
-      </div>
-      <div class="pipeline-card">
-        <div class="pc-tag">Identity · Governance</div>
-        <div class="pc-title"><span class="accent">Entra Identity</span><br>Pipelines</div>
-        <div class="pc-desc">Entra Connect (AD ↔ Azure sync), Conditional Access Policies, PIM setup, App Registrations, Policy Management. Ensuring secure identity posture across a federal, multi-environment platform.</div>
-        <div>
-          <span class="pc-badge def">CAPs</span>
-          <span class="pc-badge def">PIM</span>
-          <span class="pc-badge def">Entra Connect</span>
+            <span class="mini-badge">Sport</span>
+            <span class="mini-badge">Lead</span>
+            <span class="mini-badge">Bouldering</span>
+          </div>
         </div>
-        <div class="pc-num">04</div>
-      </div>
-    </div>
-
-    <div class="tech-slash-block">
-      <div class="slash-eyebrow">Platform &amp; Tooling</div>
-      <div class="slash-text">
-        Workflow <span class="sub">(Agile, Jira, ServiceNow)</span>
-        <span class="sep">/</span>CI/CD &amp; Automation <span class="sub">(Azure DevOps, Pipeline Design, PowerShell)</span>
-        <span class="sep">/</span>Identity &amp; Access Management <span class="sub">(Entra ID, RBAC, PIM, Conditional Access, App Registrations)</span>
-        <span class="sep">/</span>Hybrid Identity <span class="sub">(Entra Connect, Cross-Tenant Sync)</span>
-        <span class="sep">/</span>Cloud Platform <span class="sub">(Function Apps, Storage, Networking)</span>
-        <span class="sep">/</span>Governance &amp; Policy <span class="sub">(Policy Management, Compliance Controls)</span>
-        <span class="sep">/</span>Infrastructure as Code <span class="sub">(Bicep, ARM Templates, Landing Zones)</span>
+        <!-- Snowboarding: light -->
+        <div class="stack-card">
+          <div class="stack-card-eyebrow">Snowboarding</div>
+          <div class="stack-card-title">ALPINE</div>
+          <div>
+            <div class="bento-label">Mountains</div>
+            <div class="bento-val">Perisher · Hotham</div>
+          </div>
+          <div>
+            <div class="bento-label">Terrain</div>
+            <div class="bento-val">Double Blacks<br>Off-Piste</div>
+          </div>
+          <div class="stack-card-badges">
+            <span class="mini-badge">Splitboard</span>
+            <span class="mini-badge">Freeride</span>
+          </div>
+        </div>
+        <!-- Recent Reads: spans 2 cols -->
+        <div class="stack-card span-cols">
+          <div class="stack-card-eyebrow">Recent Reads</div>
+          <div class="reads-list">
+            <div class="read-row">
+              <div class="read-title">K2: Triumph and Tragedy</div>
+              <div class="read-author">Jim Curran</div>
+              <span class="mini-badge" style="white-space:nowrap;flex-shrink:0;">In Progress →</span>
+            </div>
+            <div class="read-row">
+              <div class="read-title">Life Unfolding</div>
+              <div class="read-author">Jamie A. Davies</div>
+            </div>
+            <div class="read-row">
+              <div class="read-title">Digital Literacy</div>
+              <div class="read-author">Paul Gilster</div>
+            </div>
+            <div class="read-row">
+              <div class="read-title">Gut</div>
+              <div class="read-author">Giulia Ender</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- OUTSIDE WORK -->
-  <div class="sec-label"><span>005 · Outside Work</span><span>Brunswick</span></div>
-  <div class="interests-block">
-    <div class="body-grid">
-      <div class="lbl-section">
-        <div class="lbl-sec-header"><span>SNOWBOARDING</span><span class="sec-code">ALPINE</span></div>
-        <div class="entry">
-          <span class="entry-key">Home Mountains</span>
-          <span class="entry-val sm">Perisher · Hotham</span>
-        </div>
-        <div class="entry">
-          <span class="entry-key">Terrain</span>
-          <span class="entry-val sm">Double Blacks · Off-Piste</span>
-        </div>
-        <div class="entry">
-          <span class="entry-key">Discipline</span>
-          <span class="entry-val sm">Splitboarding · Freeride · Eurocarving</span>
-        </div>
-      </div>
-      <div class="lbl-section">
-        <div class="lbl-sec-header"><span>CLIMBING</span><span class="sec-code">SPORT</span></div>
-        <div class="entry">
-          <span class="entry-key">Outdoor Sport</span>
-          <span class="entry-val sm">GRADE 21 · Boogie Till You Puke · Camel's Hump</span>
-        </div>
-        <div class="entry">
-          <span class="entry-key">Indoor Sport</span>
-          <span class="entry-val sm">GRADE 23 · @ Urban Climb</span>
-        </div>
-        <div class="entry">
-          <span class="entry-key">Courses</span>
-          <span class="entry-val sm">Top Rope Anchor Setting · Outdoor Lead Course</span>
-        </div>
+  <!-- WINDOW: FROG -->
+  <div class="window">
+    <div class="window-titlebar" style="background:#4a4a5a;">
+      <span class="window-num">·</span>
+      <span class="window-title">FROG.ASCII</span>
+      <div class="window-controls">
+        <span class="win-btn"></span><span class="win-btn"></span><span class="win-btn"></span>
       </div>
     </div>
-    <div class="interests-grid">
-      <div class="reading-card">
-        <div>
-          <div class="reading-eyebrow">Currently reading</div>
-          <div class="reading-title">K2:<br><span class="purple">Triumph and Tragedy</span></div>
-          <div class="reading-author">Jim Curran</div>
-        </div>
-        <span class="reading-badge">In progress →</span>
+    <div class="window-body">
+      <div class="frog-block">
+        <iframe src="components/frog-ascii.html" scrolling="no" style="width:100%;height:320px;border:none;display:block;overflow:hidden;"></iframe>
       </div>
     </div>
-  </div>
-  
-  <div class="frog-block">
-     <object data="components/frog-ascii.html" type="text/html" style="width:100%;height:320px;border:none;display:block;"></object>
   </div>
 
   <footer>
@@ -438,42 +540,71 @@
     <span>A01 · 2026</span>
   </footer>
 
+  <!-- DIALOG COMPONENT -->
+  <div class="dialog-overlay hidden" id="dialogOverlay" role="dialog" aria-modal="true">
+    <div class="dialog">
+      <div class="dialog-titlebar">
+        <span class="dialog-title" id="dialogTitle">Information</span>
+        <button class="dialog-close" id="dialogCloseX" aria-label="Close">✕</button>
+      </div>
+      <div class="dialog-body" id="dialogBody"></div>
+      <div class="dialog-footer" id="dialogFooter"></div>
+    </div>
+  </div>
+
+  <script>
+  // DIALOG UTILITY
+  (function(){
+    const overlay = document.getElementById('dialogOverlay');
+    const titleEl = document.getElementById('dialogTitle');
+    const bodyEl  = document.getElementById('dialogBody');
+    const footer  = document.getElementById('dialogFooter');
+    const closeX  = document.getElementById('dialogCloseX');
+
+    function close(){ overlay.classList.add('hidden'); }
+
+    closeX.addEventListener('click', close);
+    overlay.addEventListener('click', function(e){ if(e.target === overlay) close(); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+
+    window.showDialog = function({ title = 'Information', message = '', buttons } = {}){
+      titleEl.textContent = title;
+      bodyEl.textContent  = message;
+      footer.innerHTML    = '';
+      const btns = buttons || [{ label: 'OK', primary: true }];
+      btns.forEach(function(b){
+        const btn = document.createElement('button');
+        btn.className = 'btn';
+        btn.textContent = b.label;
+        btn.addEventListener('click', function(){ if(b.onClick) b.onClick(); close(); });
+        footer.appendChild(btn);
+      });
+      overlay.classList.remove('hidden');
+    };
+  })();
+  </script>
+
   <script>
   // MFCC HEATMAP
   (function(){
-    const c=document.getElementById('heatmapCanvas');
-    const ctx=c.getContext('2d');
-    const W=c.width,H=c.height;
-    const COLS=60,ROWS=13;
-    const cw=W/COLS,ch=H/ROWS;
-    const palette=['#0a0a1a','#0f1f4a','#0c3a80','#0060b8','#0090d0','#00b8e0','#20d4c0','#80e860','#d0d020','#f08000','#e83000','#ff2200'];
-    function val(r,c){
-      const t=c/59,coef=r/12;
-      const base=Math.sin(t*Math.PI*2.1+coef*1.6)*0.5+0.5;
-      const formant=Math.sin(t*Math.PI*5+coef*1.1)*0.18;
-      const decay=Math.exp(-t*0.8)*0.2;
-      const n=(Math.random()-0.5)*0.08;
-      return Math.max(0,Math.min(1,base+formant+decay+n));
+    const c = document.getElementById('heatmapCanvas');
+    const ctx = c.getContext('2d');
+    const COLS = 60, ROWS = 13;
+    const cw = c.width / COLS, ch = c.height / ROWS;
+    const palette = ['#0a0a1a','#0f1f4a','#0c3a80','#0060b8','#0090d0','#00b8e0','#20d4c0','#80e860','#d0d020','#f08000','#e83000','#ff2200'];
+    function val(r, col){
+      const t = col / 59, coef = r / 12;
+      const base = Math.sin(t * Math.PI * 2.1 + coef * 1.6) * 0.5 + 0.5;
+      const formant = Math.sin(t * Math.PI * 5 + coef * 1.1) * 0.18;
+      const decay = Math.exp(-t * 0.8) * 0.2;
+      return Math.max(0, Math.min(1, base + formant + decay + (Math.random() - 0.5) * 0.08));
     }
-    for(let r=ROWS-1;r>=0;r--){
-      for(let cc=0;cc<COLS;cc++){
-        const v=val(r,cc);
-        const idx=Math.floor(v*(palette.length-1));
-        ctx.fillStyle=palette[idx];
-        ctx.fillRect(cc*cw,(ROWS-1-r)*ch,cw,ch);
+    for(let r = ROWS - 1; r >= 0; r--){
+      for(let cc = 0; cc < COLS; cc++){
+        ctx.fillStyle = palette[Math.floor(val(r, cc) * (palette.length - 1))];
+        ctx.fillRect(cc * cw, (ROWS - 1 - r) * ch, cw, ch);
       }
     }
-  })();
-  </script>
-  <script>
-  // SCROLL SPINNER
-  (function(){
-    const spinner = document.getElementById('navSpinner');
-    window.addEventListener('scroll', function(){
-      const maxScroll = document.body.scrollHeight - window.innerHeight;
-      const deg = (window.scrollY / maxScroll) * 360 * 3;
-      spinner.style.transform = 'rotate(' + deg + 'deg)';
-    }, {passive: true});
   })();
   </script>
 
